@@ -7,12 +7,12 @@ public class Hash
     public static void main( String[] args )
     {
         HashMap<String,Integer> has = new HashMap<String,Integer>();
-        Logger log = Logger.getLogger("hi");
+        Logger log1 = Logger.getLogger("hi");
         has.put("Vaigai EXP", "06:30");
         has.put("Pandian EXP","07:00");
         has.put("Chennai EXP","19:00");
-        log.info("Entries are"+String.valueOf(has));
-        log.info(String.valueOf(has.get("Vaigai EXP")));
+        log1.log(Level.INFO,()->"Entries are"+has);
+        log1.log(Level.INFO,()->+has.get("Vaigai EXP"));
         HashMap<String,Integer> has2 = new HashMap<String,Integer>();
         has2.putAll(has);
         log.info("Values after adding another hashmap values"+String.valueOf(has2));
