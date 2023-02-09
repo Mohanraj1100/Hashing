@@ -7,7 +7,7 @@ import java.util.logging.*;
 public class Hashset {
 
 	public static void main(String[] args) {
-		HashSet hs = new HashSet();
+		HashSet<String> hs = new HashSet<String>();
 		Logger log=Logger.getLogger("hi");
 		hs.add(5);
 		hs.add(50.23);
@@ -27,7 +27,7 @@ public class Hashset {
 		ll.add(23);
 		log.info("Values in LinkedList"+String.valueOf(ll));
 		
-		HashSet hs1 = new HashSet(ll);
+		HashSet<String> hs1 = new HashSet<String>(ll);
 		log.info("Values after adding linkedlist elements"+String.valueOf(hs1));
 		hs1.clear();
 		log.info("Values after cleared"+String.valueOf(hs1));
