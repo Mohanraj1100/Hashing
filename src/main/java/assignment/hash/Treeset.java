@@ -8,7 +8,7 @@ public class Treeset {
 
 	public static void main(String[] args) {
 
-		TreeSet t = new TreeSet();
+		TreeSet<String> t = new TreeSet<String>();
 		Logger log = Logger.getLogger("hi");
 		t.add(23);
 		t.add(56);
@@ -19,11 +19,11 @@ public class Treeset {
 		log.info("Size of map"+String.valueOf(t.size()));
 		t.clear();
 		log.info("Values after cleared"+String.valueOf(t));
-		ArrayList al = new ArrayList();
+		ArrayList<String> al = new ArrayList<String>();
 		al.add(1);
 		al.add(4);
 		al.add(0);
-		TreeSet t1 = new TreeSet(al);
+		TreeSet<String> t1 = new TreeSet<String>(al);
 		log.info("After get elements from ArrayList"+String.valueOf(t1));
 		
 
