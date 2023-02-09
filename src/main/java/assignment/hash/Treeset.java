@@ -9,22 +9,22 @@ public class Treeset {
 	public static void main(String[] args) {
 
 		TreeSet<String> t = new TreeSet<String>();
-		Logger log = Logger.getLogger("hi");
+		Logger log1 = Logger.getLogger("hi");
 		t.add(23);
 		t.add(56);
 		t.add(45);
 		t.add(1);
 		t.add(10);
-		log.info("Values are"+String.valueOf(t));
-		log.info("Size of map"+String.valueOf(t.size()));
+		log1.log(Level.INFO,()-> "Values are"+ t);
+		log1.log(Level.INFO,()->"Size of map"+ t.size());
 		t.clear();
-		log.info("Values after cleared"+String.valueOf(t));
+		log1.log(Level.INFO,()->"Values after cleared"+t);
 		ArrayList<String> al = new ArrayList<String>();
 		al.add(1);
 		al.add(4);
 		al.add(0);
 		TreeSet<String> t1 = new TreeSet<String>(al);
-		log.info("After get elements from ArrayList"+String.valueOf(t1));
+		log1.log(Level.INFO,()->"After get elements from ArrayList"+ t1);
 		
 
 	}
