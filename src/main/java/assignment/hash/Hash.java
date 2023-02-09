@@ -15,13 +15,13 @@ public class Hash
         log1.log(Level.INFO,()->+has.get("Vaigai EXP"));
         HashMap<String,Integer> has2 = new HashMap<String,Integer>();
         has2.putAll(has);
-        log.info("Values after adding another hashmap values"+String.valueOf(has2));
-        log.info("Size is "+String.valueOf(has2.size()));
+        log1.log(Level.INFO,()->"Values after adding another hashmap values"+has2);
+        log1.log(Level.INFO,()->"Size is "+has2.size());
         Set<?> s = has.entrySet();
-        log.info("Print the keys"+String.valueOf(has.keySet()));
-        log.info("Print the values"+String.valueOf(has.values()));
+        log1.log(Level.INFO,()->"Print the keys"+has.keySet());
+        log1.log(Level.INFO,()->"Print the values"+has.values());
         has2.clear();
-        log.info("Values after cleared"+String.valueOf(has2));
+        log1.log(Level.INFO,()->"Values after cleared"+has2);
         
         
         
