@@ -17,7 +17,6 @@ public class Hash
         has2.putAll(has);
         log1.log(Level.INFO,()->"Values after adding another hashmap values"+has2);
         log1.log(Level.INFO,()->"Size is "+has2.size());
-        Set<?> s = has.entrySet();
         log1.log(Level.INFO,()->"Print the keys"+has.keySet());
         log1.log(Level.INFO,()->"Print the values"+has.values());
         has2.clear();
